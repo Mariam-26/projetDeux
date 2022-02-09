@@ -142,11 +142,13 @@ nav .menu a {
     margin: auto;
     background: #414443;
     border-radius: 20px;
+    color: rgb(222, 220, 255);
     box-shadow: 0px 0px 20px #000;
 }
 
 .para1:hover {
     background: rgb(222, 220, 255);
+    color: #000;
 }
 
 .grid-container1,
@@ -206,12 +208,14 @@ nav .menu a {
     padding: 25px;
     margin: auto;
     background: #414443;
+    color: rgb(222, 220, 255);
     border-radius: 20px;
     box-shadow: 0px 0px 20px #000;
 }
 
 .para3:hover {
     background: rgb(222, 220, 255);
+    color: #000;
 }
 
 .para2,
@@ -226,14 +230,17 @@ nav .menu a {
     background: #414443;
     border-radius: 20px;
     box-shadow: 0px 0px 20px #000;
+    color: #999;
 }
 
 .para2:hover {
     background: rgb(222, 220, 255);
+    color: #000;
 }
 
 .para4:hover {
     background: rgb(222, 220, 255);
+    color: #000;
 }
 
 
@@ -260,6 +267,7 @@ footer h1 {
     font-size: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
+    color: #999;
 }
 
 .services {
@@ -274,6 +282,10 @@ footer h3 {
     text-transform: capitalize;
     margin: 20px auto;
     letter-spacing: 1px;
+    color: #999;
+}
+
+footer p {
     color: #999;
 }
 
