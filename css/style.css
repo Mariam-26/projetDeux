@@ -389,6 +389,9 @@ footer p {
         font-size: 2.3rem;
         /* text-transform: uppercase; */
     }
+    .header h2 {
+        font-size: 5rem;
+    }
     /* Style pour Section 1 et Section 3 */
     .section1,
     .section2,
@@ -466,6 +469,9 @@ footer p {
     /* HEADER */
     header {
         margin-bottom: 40PX;
+    }
+    .header h2 {
+        font-size: 4rem;
     }
     /* FIN HEADER */
     /* MAIN */
