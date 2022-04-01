@@ -85,3 +85,33 @@ nav .menu a:hover {
 
 
 /* fin HEADER */
+
+
+/* style pour le MAIN */
+
+.mariam {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pre {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 70px;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+
+/* Style pour les container-grid */
+
+.grid-container,
+.grid-container2 {
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 70px;
+}
