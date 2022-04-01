@@ -115,3 +115,66 @@ nav .menu a:hover {
     grid-template-columns: 100%;
     margin-bottom: 70px;
 }
+
+
+/* Style pour Section 1 et Section 3 */
+
+.section1,
+.section3 {
+    border: 5px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'i1' 'p1' 'i2';
+    /* margin: auto !important; */
+}
+
+.image1 {
+    border: 5px solid yellow;
+    grid-area: 'i1';
+    width: 260px;
+    height: 71vh;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 10px;
+    margin-right: 0 !important;
+}
+
+.image2 {
+    border: 5px solid yellow;
+    grid-area: 'i2';
+    width: 280px !important;
+    height: 71vh;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 10px;
+    margin-right: 0 !important;
+}
+
+.para1 {
+    border: 5px solid rgb(0, 238, 255);
+    grid-area: 'p1';
+    height: 64vh;
+    width: 300px;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+    padding: 20px;
+    background: #414443;
+    border-radius: 20px;
+    color: rgb(222, 220, 255);
+    box-shadow: 0px 0px 20px #000;
+    margin: 0 30px !important;
+}
+
+.para1:hover {
+    background: rgb(222, 220, 255);
+    color: #000;
+}
+
+.grid-container1,
+.grid-container3 {
+    border: 5px solid rgb(255, 0, 242);
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+
+/* Style pour Section 1 et Section 3 */
