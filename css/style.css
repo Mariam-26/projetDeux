@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    background: url(../img/concrete-texture.png);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -113,7 +114,7 @@ nav .menu a:hover {
     border: 5px solid red;
     display: grid;
     grid-template-columns: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 
 
@@ -187,7 +188,6 @@ nav .menu a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'p1 i1';
-    margin: 0 10px;
 }
 
 .image3,
@@ -196,7 +196,7 @@ nav .menu a:hover {
     width: 500px;
     height: 72.5vh;
     box-shadow: 0px 0px 20px #000;
-    margin: 0;
+    /* margin: 0; */
     border-radius: 10px;
 }
 
@@ -217,7 +217,7 @@ nav .menu a:hover {
     height: 71vh;
     box-shadow: 0px 0px 20px #000;
     border-radius: 10px;
-    margin-right: 0 !important;
+    /* margin-right: 0 !important; */
 }
 
 .para3 {
@@ -253,7 +253,6 @@ nav .menu a:hover {
     border-radius: 20px;
     color: rgb(222, 220, 255);
     box-shadow: 0px 0px 20px #000;
-    margin: 0 30px 0 0 !important;
 }
 
 .para2:hover {
@@ -477,3 +476,96 @@ footer p {
 
 
 /* Fin TABLETTE */
+
+
+/* MOBILE */
+
+@media screen and (max-width: 760px) {
+    /* HEADER */
+    header {
+        margin-bottom: 40PX;
+    }
+    .header h2 {
+        font-size: 1.5rem !important;
+    }
+    nav h1 {
+        font-size: 1.5rem;
+    }
+    nav .menu {
+        margin-left: 0px;
+    }
+    nav .menu a {
+        margin-right: 15px;
+        font-size: 1rem !important;
+    }
+    /* FIN HEADER */
+    /* MAIN */
+    .pre {
+        margin: 40px;
+        font-size: 1.5rem;
+        border: 5px solid blue;
+    }
+    /* Style pour les Sections */
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'i1' 'p1';
+        margin-bottom: 0px !important;
+    }
+    .image1,
+    .image3,
+    .image4,
+    .image6 {
+        margin: auto !important;
+        grid-template-areas: 'i1';
+        width: 100%;
+    }
+    .image1,
+    .image4 {
+        margin-bottom: 40px !important;
+    }
+    .image3,
+    .image6 {
+        margin-top: 40px !important;
+    }
+    .image2,
+    .image5 {
+        display: none;
+    }
+    .para1,
+    .para2,
+    .para3,
+    .para4 {
+        font-size: 12px;
+        margin: auto !important;
+        grid-template-areas: 'p1';
+        width: 85%;
+        height: 50vh;
+    }
+    .para2,
+    .para4 {}
+    /* Fin Style pour les Sections*/
+    footer {
+        width: 100% !important;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    footer h1 {
+        display: none;
+    }
+    footer h3,
+    .services {
+        display: none;
+    }
+    /* fin FOOTER */
+}
+
+
+/* Fin MOBILE */
