@@ -22,6 +22,7 @@ body {
 /* style pour le HEADER */
 
 nav {
+    width: 100% !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -95,7 +96,7 @@ nav .menu a:hover {
     align-content: center;
     justify-content: center;
     margin: 70px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Raleway', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -116,34 +117,32 @@ nav .menu a:hover {
 
 .section1,
 .section3 {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'i1' 'p1' 'i2';
-    /* margin: auto !important; */
 }
 
 .image1 {
     grid-area: 'i1';
-    width: 260px;
+    width: 316px;
     height: 71vh;
     box-shadow: 0px 0px 20px #000;
     border-radius: 10px;
-    margin-right: 0 !important;
 }
 
 .image2 {
     grid-area: 'i2';
-    width: 280px !important;
+    width: 316px !important;
     height: 71vh;
     box-shadow: 0px 0px 20px #000;
     border-radius: 10px;
-    margin-right: 0 !important;
+    text-align: right !important;
 }
 
 .para1 {
     grid-area: 'p1';
-    height: 64vh;
+    height: 64.7vh !important;
     width: 300px;
     cursor: pointer;
     transition: ease-in-out 0.4s;
@@ -152,7 +151,7 @@ nav .menu a:hover {
     border-radius: 20px;
     color: rgb(222, 220, 255);
     box-shadow: 0px 0px 20px #000;
-    margin: 0 30px !important;
+    margin: 0 auto !important;
 }
 
 .para1:hover {
@@ -162,7 +161,7 @@ nav .menu a:hover {
 
 .grid-container1,
 .grid-container3 {
-    display: grid;
+    display: flex;
     grid-template-columns: 100%;
 }
 
@@ -181,34 +180,33 @@ nav .menu a:hover {
 .image3,
 .image6 {
     grid-area: 'i1';
-    width: 500px;
-    height: 72.5vh;
-    box-shadow: 0px 0px 20px #000;
+    width: 550px;
+    height: 71vh;
     /* margin: 0; */
     border-radius: 10px;
 }
 
 .image4 {
-    grid-area: 'i1';
-    width: 260px;
+    grid-area: 'i2';
+    width: 316px !important;
     height: 71vh;
     box-shadow: 0px 0px 20px #000;
     border-radius: 10px;
-    margin-right: 0 !important;
+    text-align: right !important;
 }
 
 .image5 {
-    grid-area: 'i1';
-    width: 280px;
+    grid-area: 'i2';
+    width: 316px !important;
     height: 71vh;
     box-shadow: 0px 0px 20px #000;
     border-radius: 10px;
-    /* margin-right: 0 !important; */
+    text-align: right !important;
 }
 
 .para3 {
     grid-area: 'p1';
-    height: 64vh;
+    height: 64.7vh !important;
     width: 300px;
     cursor: pointer;
     transition: ease-in-out 0.4s;
@@ -217,7 +215,7 @@ nav .menu a:hover {
     border-radius: 20px;
     color: rgb(222, 220, 255);
     box-shadow: 0px 0px 20px #000;
-    margin: 0 30px !important;
+    margin: 0 auto !important;
 }
 
 .para3:hover {
@@ -228,7 +226,7 @@ nav .menu a:hover {
 .para2,
 .para4 {
     grid-area: 'p1';
-    height: 64vh;
+    height: 64.7vh !important;
     width: 300px;
     cursor: pointer;
     transition: ease-in-out 0.4s;
@@ -371,127 +369,70 @@ footer p {
 
 @media screen and (max-width: 990px) {
     /* HEADER */
-    header {
-        border: 5px solid green;
-        margin-bottom: 40PX;
-    }
-    .header {
-        height: calc(100vh - 50vh) !important;
-    }
-    .header h2 {
-        font-size: 1rem !important;
-        background-color: yellow;
-    }
-    nav {
-        padding: 0 100px !important;
-        border: 5px solid green;
-    }
-    nav h1 {
-        margin-right: 65px !important;
-        font-size: 2rem !important;
-    }
     nav .menu {
         margin-left: 0px;
     }
+    nav h1 {
+        font-size: 2rem !important;
+        text-transform: uppercase;
+        margin: 0 80px 0 0 !important;
+    }
     nav .menu a {
-        margin-right: 20px !important;
+        margin: 0px 20px;
+        text-transform: capitalize;
         font-size: 1.5rem !important;
     }
-    nav .menu a:last-child {
-        margin-right: 0px !important;
+    .header h2 {
+        font-size: 4rem !important;
     }
-    /* FIN HEADER */
-    /* MAIN */
-    .pre {
-        margin: 40px;
-        font-size: 3rem !important;
-    }
-    /* Style pour les Sections */
+    /* Style pour Section 1 et Section 3 */
     .section1,
     .section2,
     .section3,
     .section4 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 'i1' 'p1';
-        margin-bottom: 0px !important;
     }
-    .image1,
-    .image3,
-    .image4,
-    .image6 {
-        margin: auto !important;
+    .image1 {
         grid-template-areas: 'i1';
-        width: 100%;
-    }
-    .image1,
-    .image4 {
-        margin-bottom: 40px !important;
-    }
-    .image3,
-    .image6 {
-        margin-top: 28px !important;
+        width: 47% !important;
+        height: 56.1vh;
     }
     .image2,
     .image5 {
         display: none;
     }
-    .para1 {
-        padding: 20px 30px;
-        border: 5px solid red;
-        font-size: 1rem !important;
-        margin: auto !important;
-        grid-template-areas: 'p1';
-        width: 100% !important;
-        height: 50vh;
+    .image3,
+    .image6 {
+        grid-template-areas: 'i1';
+        width: 49%;
+        height: 56.3vh;
     }
-    .para2 {
-        padding: 20px 30px;
-        border: 5px solid red;
-        font-size: 1rem !important;
-        margin: auto !important;
-        margin-top: 0 !important;
-        grid-template-areas: 'p1';
-        width: 100% !important;
-        height: 50vh;
+    .image4 {
+        grid-template-areas: 'i1';
+        width: 47% !important;
+        height: 56.1vh;
     }
+    .para1,
     .para3 {
-        padding: 20px 30px;
-        border: 5px solid red;
-        font-size: 1rem !important;
-        margin: auto !important;
+        font-size: .8rem !important;
         grid-template-areas: 'p1';
-        width: 100% !important;
-        height: 50vh;
+        width: 42%;
+        height: 50vh !important;
+        margin-right: 0 !important;
     }
+    /* Fin Style pour Section 1 et Section 3 */
+    /* Style pour Section 2 et Section 4 */
+    .para2,
     .para4 {
-        padding: 20px 30px;
-        border: 5px solid red;
-        font-size: 1rem !important;
-        margin: auto !important;
-        margin-top: 0 !important;
+        font-size: .8rem !important;
         grid-template-areas: 'p1';
-        width: 100% !important;
-        height: 50vh;
+        width: 40% !important;
+        height: 50vh !important;
+        margin-right: 30px !important;
     }
-    /* Fin Style pour les Sections*/
-    footer {
-        width: 100% !important;
-        display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-    }
-    footer h1 {
-        display: none;
-    }
-    footer h3,
-    .services {
-        display: none;
-    }
-    /* fin FOOTER */
 }
 
 
@@ -512,7 +453,9 @@ footer p {
         font-size: 2rem !important;
     }
     nav h1 {
-        font-size: 1.5rem;
+        text-align: center !important;
+        font-size: 1.5rem !important;
+        margin-right: 0 !important;
     }
     nav .menu {
         margin-left: 0px;
@@ -544,7 +487,7 @@ footer p {
     .image6 {
         margin: auto !important;
         grid-template-areas: 'i1';
-        width: 100%;
+        width: 97% !important;
     }
     .image1,
     .image4 {
@@ -552,25 +495,29 @@ footer p {
     }
     .image3,
     .image6 {
-        margin-top: 28px !important;
+        margin-top: 40px !important;
     }
     .image2,
     .image5 {
         display: none;
     }
     .para1,
-    .para2,
-    .para3,
-    .para4 {
-        font-size: 13px;
+    .para3 {
+        font-size: .9rem !important;
         margin: auto !important;
         grid-template-areas: 'p1';
-        width: 85%;
+        width: 85% !important;
         height: 50vh;
+        margin-bottom: 0 !important;
     }
     .para2,
     .para4 {
+        font-size: .9rem !important;
         margin-top: 0 !important;
+        margin: auto !important;
+        grid-template-areas: 'p1';
+        width: 85% !important;
+        height: 50vh;
     }
     /* Fin Style pour les Sections*/
     footer {
