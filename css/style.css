@@ -46,7 +46,7 @@ strong:hover {
 
 nav .menu {
     margin-top: 3px;
-    margin-left: 500px;
+    margin-left: 250px;
     background: linear-gradient( 90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -74,7 +74,7 @@ nav .menu a:hover {
 
 .header h2 {
     font-family: sans-serif;
-    font-size: 6rem !important;
+    font-size: 5rem !important;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: rgba(0, 0, 0, 0.24);
@@ -398,7 +398,7 @@ footer p {
     .image1 {
         grid-template-areas: 'i1';
         width: 47% !important;
-        height: 56.1vh;
+        height: 57.3vh;
     }
     .image2,
     .image5 {
@@ -413,14 +413,14 @@ footer p {
     .image4 {
         grid-template-areas: 'i1';
         width: 47% !important;
-        height: 56.1vh;
+        height: 57.3vh;
     }
     .para1,
     .para3 {
         font-size: .8rem !important;
         grid-template-areas: 'p1';
         width: 42%;
-        height: 50vh !important;
+        height: 51vh !important;
         margin-right: 0 !important;
     }
     /* Fin Style pour Section 1 et Section 3 */
@@ -441,6 +441,39 @@ footer p {
 
 /* MOBILE */
 
+@media screen and (max-width: 800px) {
+    /* HEADER */
+    .header {
+        height: calc(100vh - 50vh) !important;
+    }
+    /* Style pour Section 1 et Section 3 */
+    .image2,
+    .image5 {
+        display: none;
+    }
+    .image1,
+    .image3,
+    .image4 {
+        border: 5px solid red;
+        height: 46.2vh;
+    }
+    .image6 {
+        height: 46.3vh;
+    }
+    .para1,
+    .para3 {
+        font-size: .7rem !important;
+        height: 40vh !important;
+    }
+    /* Fin Style pour Section 1 et Section 3 */
+    /* Style pour Section 2 et Section 4 */
+    .para2,
+    .para4 {
+        font-size: .7rem !important;
+        height: 40vh !important;
+    }
+}
+
 @media screen and (max-width: 760px) {
     /* HEADER */
     header {
@@ -450,7 +483,7 @@ footer p {
         height: calc(100vh - 50vh) !important;
     }
     .header h2 {
-        font-size: 2rem !important;
+        font-size: 1.6rem !important;
     }
     nav h1 {
         text-align: center !important;
@@ -461,14 +494,14 @@ footer p {
         margin-left: 0px;
     }
     nav .menu a {
-        margin-right: 15px;
-        font-size: 1rem !important;
+        margin-right: 10px;
+        font-size: .8rem !important;
     }
     /* FIN HEADER */
     /* MAIN */
     .pre {
         margin: 40px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     /* Style pour les Sections */
     .section1,
@@ -503,20 +536,20 @@ footer p {
     }
     .para1,
     .para3 {
-        font-size: .9rem !important;
+        font-size: .7rem !important;
         margin: auto !important;
         grid-template-areas: 'p1';
-        width: 85% !important;
+        width: 86% !important;
         height: 50vh;
         margin-bottom: 0 !important;
     }
     .para2,
     .para4 {
-        font-size: .9rem !important;
+        font-size: .7rem !important;
         margin-top: 0 !important;
         margin: auto !important;
         grid-template-areas: 'p1';
-        width: 85% !important;
+        width: 86% !important;
         height: 50vh;
     }
     /* Fin Style pour les Sections*/
@@ -536,6 +569,32 @@ footer p {
         display: none;
     }
     /* fin FOOTER */
+}
+
+@media screen and (max-width: 375px) {
+    /* HEADER */
+    .para1,
+    .para3 {
+        font-size: .8rem !important;
+    }
+    .para2,
+    .para4 {
+        font-size: .7rem !important;
+    }
+    /* Fin Style pour les Sections*/
+}
+
+@media screen and (max-width: 360px) {
+    /* HEADER */
+    .para1,
+    .para3 {
+        font-size: .8rem !important;
+    }
+    .para2,
+    .para4 {
+        font-size: .7rem !important;
+    }
+    /* Fin Style pour les Sections*/
 }
 
 
